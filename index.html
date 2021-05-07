@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+	<title>La Manu | Dev PHP | POEC apprenant</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+</head>
+
+<body>
+	<form action="mailto:contact@achrafely.fr" method="POST">
+		<fieldset>
+			<legend>Votre identité</legend>
+			<table>
+				<tr>
+					<td>
+						<ol>
+							<li style="margin-bottom: 10px;">
+								<label for="nom">Nom :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="prenom">Prénom :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="email">Adresse mail :</label>
+							</li>
+						</ol>
+					</td>
+					<td>
+						<input id="nom" placeholder="Nom" name="nom" type="text" value=""
+							style="display: block; margin-bottom: 4px;">
+						<input id="prenom" placeholder="Prénom" name="nom" type="text" value=""
+							style="display: block; margin-bottom: 4px;">
+						<input id="email" placeholder="Adresse mail" name="email" type="email" value=""
+							style="display: block; margin-bottom: 4px;">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Adresse de livraison</legend>
+			<table>
+				<tr>
+					<td>
+						<ol>
+							<li style="margin-bottom: 10px;">
+								<label for="adressePostale">Adresse :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="zipCode">Code Postal :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="ville">Ville :</label>
+							</li>
+						</ol>
+					</td>
+					<td>
+						<textarea id="adressePostale" placeholder="Adresse postale" name="adressePostale" value=""
+							style="display: block; margin-bottom: 4px;"></textarea>
+						<input id="zipCode" placeholder="Code Postal" name="zipCode" type="text" value=""
+							style="display: block; margin-bottom: 4px;">
+						<input id="ville" placeholder="Ville" name="ville" type="text" value=""
+							style="display: block; margin-bottom: 4px;">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Information de règlement</legend>
+			<table>
+				<tr>
+					<td>
+						<ol>
+							<li style="margin-bottom: 10px;">
+								<label for="brandcc">Type de carte bancaire :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="numcc">Numéro de carte :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="codecc">Code de sécurité :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="nomcc">Nom du titulaire :</label>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<label for="datecc">Date d'expiration :</label>
+							</li>
+						</ol>
+					</td>
+					<td>
+						<input type="radio" name='brandcc' value="">
+						<label for="visa">VISA</label>
+						<input type="radio" name='brandcc' value="">
+						<label for="Mastercard">Mastercard</label>
+						<input id="numcc" name="numcc" autocomplete="numcc" inputmode="numeric" pattern="[\d ]{10,30}" maxlength="19" placeholder="Numéro de carte" 
+								style="display: block; margin-bottom: 8px;" required>
+						<input id="codesec" name="codesec" autocomplete="codesec" inputmode="numeric" pattern="[\d ]{10,30}" maxlength="3" placeholder="Code de sécurité"
+								style="display: block; margin-bottom: 8px;" required>
+						<input id="nomcc" name="nomcc" autocomplete="nomcc" pattern="[\p{L} \-\.]+" placeholder="Nom du titulaire" 
+								style="display: block; margin-bottom: 8px;" required>
+						<input id="datecc" name="expcc" autocomplete="expcc" placeholder="MM/AA" maxlength="5"
+							style="display: block; margin-bottom: 8px;" required>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+
+</html>
